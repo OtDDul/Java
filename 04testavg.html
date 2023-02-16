@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04testavg.html</title>
+    <script>
+        function mypass(){
+            
+            var kor=0, eng=0, hap=0, avg=0, msg='', grade='F';
+            result='';
+            
+
+            kor=100; eng=85;
+            hap= kor + eng
+            avg=hap/2
+            document.getElementById('display').innerHTML = '<h3>총점=' + hap + '<h3>'
+            }
+           function mytest(){
+            var su=0, nmg=0, result='';
+
+            var su = 7;
+            
+            
+            if(su%2==0){result= su + '짝수입니다' ;}
+            else{ result = su + '홀수입니다';}
+            document.getElementById('display').innerHTML=result;
+            
+
+           }
+
+           function mynumber(){
+            var num=0, message='';
+            num=0;
+            if(num>0){message=num + '양수입니다' ;}
+            else if(num==0){message= num + '제로입니다'}
+            else if(num<0){message= num + '음수입니다'}
+            else {message=num+'숫자가아닙니다';}
+            document.getElementById('display').innerHTML=message;
+           }
+
+        
+    </script>
+</head>
+<body>
+
+    <img src="./images/ppap2.gif" width="200"  heigh="100">
+    <img src="./images/ppap2.gif" width="200"  heigh="100">
+    <img src="./images/ppap2.gif" width="200"  heigh="100">
+    <h2>04testavg.html</h2>
+    <button onclick="mypass()">press</button>
+    <button onclick="mytest()">홀짝구별</button>
+    <button onclick="mynumber()">정수</button>
+    
+    <div id="display"></div>
+    
+</body>
+</html>

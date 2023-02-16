@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>07testgugudan.html</title>
+    <script>
+        
+        function mygugudan(){
+            var dan=0, message='';
+
+            dan=document.myform.gugu.value;//입력란에서 데이터받기
+
+            for(var cnt=1; cnt<10; cnt=cnt+1){
+               message = message+dan+'*'+cnt+'='+(dan*cnt)+'<br>'
+            
+            
+        }
+        document.getElementById('display').innerHTML = message;
+    }
+    </script>
+</head>
+<body>
+
+    <img src="./images/웃음꽃피자.jpg" width="200"  heigh="100">
+    <img src="./images/웃음꽃피자.jpg" width="200"  heigh="100">
+    <img src="./images/웃음꽃피자.jpg" width="200"  heigh="100">
+    <h2>07testgugudan.html</h2>
+    <form action="" name="myform">
+        단입력: <input type="text" name="gugu" id="gugu" >
+        <input type="button" onclick="mygugudan()" value="구구단">
+    </form><br>
+    
+    <div id="display"></div>
+    
+</body>
+</html>

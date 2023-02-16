@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01testavg.html</title>
+    <script>
+        function mypass(){
+            var info='';
+            var kor=0, eng=0, hap=0, avg=0, msg='', grade='F';
+            result='';
+            var result=
+
+            kor=90; eng=85;
+            hap= kor + eng
+            avg=hap/2
+
+            if(avg>=70){msg='축합격'}
+            else{ msg='재시험'}
+
+
+            info = '총점=' + hap +'평균='+ avg  + '';
+            info = info +'결과='+ msg ;
+
+            document.getElementById('display').innerHTML = info;
+            
+
+        }
+    </script>
+</head>
+<body>
+    <img src="./images/a2.png" width="200"  heigh="100">
+    <img src="./images/a2.png" width="200"  heigh="100">
+    <img src="./images/a2.png" width="200"  heigh="100">
+    <h2>01testavg.html</h2>
+    <button onclick="mypass()">press</button>
+    <div id="display"></div>
+    
+</body>
+</html>
